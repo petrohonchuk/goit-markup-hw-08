@@ -1,0 +1,54 @@
+.our-qualities {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  & :last-child {
+    margin-right: 0;
+  }
+}
+.our-qualities__icon-li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: $color-portfolio-button;
+  margin-right: 30px;
+  width: calc((100% - 90px) / 4);
+}
+.our-qualities__svg {
+  width: 70px;
+  height: 70px;
+}
+
+.m-bottom {
+  margin-bottom: 0;
+}
+
+.our-qualities__box {
+  min-width: 270px;
+  height: auto;
+  margin-right: 30px;
+  width: calc((100% - 90px) / 4);
+}
+.our-qualities-list :last-child {
+  margin-right: 0;
+}
+/*скрывае заголовок наши качества*/
+.visuali-hiden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  margin-left: -1;
+}
+
+.our-qualities__title {
+  @include font(700, 14px, 1.4, 0.03em);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.our-qualities__text {
+  @include font(400, 14px, 1.7, 0.03em);
+  color: $primary-text-color;
+}

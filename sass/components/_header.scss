@@ -1,0 +1,122 @@
+header {
+  border-bottom: 1px solid #ececec;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  height: 80px;
+  margin: 0 auto;
+}
+.header-nav,
+.header-list {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  text-decoration: none;
+  font-family: Raleway;
+  color: var(--title-text-color);
+  font-size: 26px;
+  line-height: 1.42;
+  letter-spacing: 0.03em;
+  margin-right: 93px;
+  display: flex;
+  align-items: center;
+}
+.logo-web {
+  color: $accent-color;
+}
+
+.header-list__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $title-text-color;
+  display: inline-block;
+  margin-right: 50px;
+  transition-property: fill color;
+  @include cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.header-list li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  &:last-child .header-list__link {
+    margin-right: 0;
+  }
+}
+
+.header-list__link.active {
+  color: $accent-color;
+  position: relative;
+  &::after {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: $accent-color;
+    border-radius: 2px;
+    content: "";
+    bottom: 0;
+  }
+}
+
+.header-list__link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+/*contacts*/
+
+.header-contacts {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.header-contacts__mail,
+.header-contacts__tell {
+  text-decoration: none;
+  @include font(500, 14px, 1.14, 0.02em);
+  font-style: normal;
+  align-items: center;
+  margin-right: 0;
+  color: $primary-text-color;
+  margin-left: 50px;
+  display: flex;
+}
+.header-contacts__mail:hover {
+  color: $accent-color;
+}
+.header-contacts__tell:hover {
+  color: $accent-color;
+}
+
+.header-contacts__phone {
+  fill: $primary-text-color;
+  margin-right: 10px;
+  .header-contacts__tell:hover & {
+    fill: $accent-color;
+  }
+}
+
+.header-contacts__convert {
+  fill: $primary-text-color;
+  margin-right: 10px;
+  .header-contacts__mail:hover & {
+    fill: $accent-color;
+  }
+}

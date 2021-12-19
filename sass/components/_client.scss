@@ -1,0 +1,39 @@
+.client-title {
+  margin-bottom: 50px;
+}
+.client {
+  display: flex;
+  justify-content: space-between;
+}
+
+.client__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid $team-icon-color;
+  border-color: $team-icon-color;
+  border-radius: 4px;
+  display: flex;
+
+  transition-property: border-color, fill, color;
+  @include cubic-bezier;
+  &:focus .client__svg,
+  &:hover .client__svg {
+    fill: $bg-hover-button;
+  }
+  &:focus,
+  &:hover {
+    border-color: $bg-hover-button;
+    fill: $bg-hover-button;
+  }
+}
+
+.client__svg {
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+  transition-property: fill;
+  @include cubic-bezier;
+}
