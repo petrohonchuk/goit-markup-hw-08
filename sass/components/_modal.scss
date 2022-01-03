@@ -13,6 +13,8 @@
   transition-property: transform, opasity;
   transition-duration: 1s;
   transition-timing-function: linear;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .form-container {
   position: relative;
@@ -23,6 +25,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+   @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
 }
 
 .close-button {

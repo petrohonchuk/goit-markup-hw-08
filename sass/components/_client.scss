@@ -1,16 +1,48 @@
-.client-title {
-  margin-bottom: 50px;
+
+.container.container--add-width{
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 0;
+    
+  }
 }
+
 .client {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  @media screen and (min-width: 768px) {
+    width: 100%;    
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;   
+    margin: 0 auto; 
+  }
+}
+.client__list-li{
+margin-top: 30px;
+ width: calc((100% - 30px) / 2);
+ @media screen and (min-width: 768px) {
+  width: calc((100% - 60px) / 3);  
+}
+@media screen and (min-width: 1200px) {
+  width: calc((100% - 150px) / 6);  
+}
 }
 
 .client__link {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 92px;
   border: 1px solid $team-icon-color;
   border-color: $team-icon-color;

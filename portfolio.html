@@ -15,36 +15,44 @@
 </head>
 <body>
     <!--header content-->
-<header class="header">
-    <div class="header-container">
-        <nav class="header-nav">
+    <header class="header" >
+        <div class="header-container">            
             <a href="./index.html" lang="en" class="logo"> <span lang="en" class="logo-web">Web</span>Studio</a>
-            <ul class="header-list">
-                <li><a href="./index.html" class="header-list__link ">Студия</a></li>
-                <li><a href="./portfolio.html" class="header-list__link active">Портфолио</a></li>
-                <li><a href="Контакты" class="header-list__link">Контакты</a></li>
-            </ul>
-        </nav>
-
-        <ul class="header-contacts">
-            <li>
-                <a href="mailto:info@example.com" class="header-contacts__mail">
+            <div class="button-container">
+            <button type="button" class="mobile-menu-open">
+                <svg class="mobile-open-icon" width="24" height="16">
+                    <use href="./images/icon.svg#icon-open-heder-menu"/>
+                </svg>
+            </button>
+            </div>
+            <nav class="header-nav">
+                <ul class="header-list" >
+                    <li><a href="./index.html"  class="header-list__link ">Студия</a></li>
+                    <li><a href="./portfolio.html" class="header-list__link active">Портфолио</a></li>
+                    <li><a href="Контакты" class="header-list__link">Контакты</a></li>
+                </ul>
+            </nav>
+            
+            <ul class="header-contacts">          
+                <li>
+                    <a href="mailto:info@example.com" class="header-contacts__mail">
                     <svg class="header-contacts__convert" width="16" height="12">
                         <use href="./images/icon.svg#icon-convert"> </use>
                     </svg>
                     info@example.com</a>
-            </li>
-            <li>
-                <a href="tel:+380991111111" class="header-contacts__tell">
+                </li>                       
+                <li>
+                    <a href="tel:+380991111111" class="header-contacts__tell">
                     <svg class="header-contacts__phone" width="13" height="16">
                         <use href="./images/icon.svg#icon-phone"></use>
                     </svg>
                     +38 099 111 11 11</a>
-            </li>
-        </ul>
-    </div>
-
-</header>
+                </li>
+            </ul>
+            
+        </div>      
+       
+    </header>
     <!--main content-->
     <main class="main">
         <!--button section-->
@@ -67,7 +75,18 @@
                     <li class="list__item">
                         <a href="" class="list__portfolio-link">
                             <div class="list__container-overlay">
-                                <img class="list__img" src="./images/img(5)-min.jpg" alt="Ноутбуук" width="370">
+                                <picture>
+                                    <source srcset="
+                                    ./images/img-1-min.jpg 1x,
+                                    ./images/card-1-2x.jpg 2x
+                                    "
+                                 
+                                    />                                   
+
+                                    <img class="list__img" src="./images/img-1-min.jpg" alt="Ноутбуук">
+        
+                                </picture>
+                                <!-- <img class="list__img" src="./images/img(5)-min.jpg" alt="Ноутбуук" width="370"> -->
                                 <div class="list__overlay">
                                     <h2 class="list__overlay-title">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -81,7 +100,18 @@
                     <li class="list__item">                        
                         <a href="" class="list__portfolio-link">
                             <div  class="list__container-overlay">
-                                <img class="list__img" src="./images/img(6)-min.jpg" width="370" alt="Баскетболисты">
+                                <picture>
+                                    <source srcset="
+                                    ./images/img-2-min.jpg 1x,
+                                    ./images/card-2-2x.jpg 2x
+                                    "
+                                   
+                                    />                                   
+
+                                    <img class="list__img" src="./images/img-2-min.jpg" alt="Баскетболисты">
+        
+                                </picture>
+                                <!-- <img class="list__img" src="./images/img(6)-min.jpg" width="370" alt="Баскетболисты"> -->
                                 <div class="list__overlay">
                                     <h2 class="list__overlay-title">Технокряк это современная площадка распространения коронавируса.
                                         Компании используют эту платформу для цифрового
@@ -96,7 +126,18 @@
                     <li class="list__item">
                         <a href="" class="list__portfolio-link">
                             <div class="list__container-overlay">
-                                <img class="list__img" src="./images/img(7)-min.jpg" width="370" alt="Ресторан Seafood">
+                                <picture>
+                                    <source srcset="
+                                    ./images/img-3-min.jpg 1x,
+                                    ./images/card-3-2x.jpg 2x
+                                    "
+                                  
+                                    />                                   
+
+                                    <img class="list__img" src="./images/img-3-min.jpg"  alt="Ресторан Seafood">
+        
+                                </picture>
+                                <!-- <img class="list__img" src="./images/img(7)-min.jpg" width="370" alt="Ресторан Seafood"> -->
                                 <div class="list__overlay">
                                     <h2 class="list__overlay-title">Технокряк это современная площадка распространения коронавируса.
                                         Компании используют эту платформу для цифрового
@@ -111,7 +152,18 @@
                     <li class="list__item">
                         <a href="" class="list__portfolio-link">
                             <div class="list__container-overlay">
-                                <img class="list__img" src="./images/img(8)-min.jpg" width="370" alt="Наушники">
+                                <picture>
+                                    <source srcset="
+                                    ./images/img-4-min.jpg 1x,
+                                    ./images/card-4-2x.jpg 2x
+                                    "
+                                   
+                                    />                                   
+
+                                    <img class="list__img" src="./images/img-4-min.jpg"  alt="Ресторан Seafood">
+        
+                                </picture>
+                                <!-- <img class="list__img" src="./images/img(8)-min.jpg" width="370" alt="Наушники"> -->
                                 <div class="list__overlay">
                                     <h2 class="list__overlay-title">Технокряк это современная площадка распространения коронавируса.
                                         Компании используют эту платформу для цифрового
@@ -126,7 +178,18 @@
                     <li class="list__item">
                         <a href="" class="list__portfolio-link">
                             <div class="list__container-overlay">
-                                <img class="list__img" src="./images/img(9)-min.jpg" width="370" alt="Коробки">                                
+                                <picture>
+                                    <source srcset="
+                                    ./images/img-5-min.jpg 1x,
+                                    ./images/card-5-2x.jpg 2x
+                                    "
+                                   
+                                    />                                   
+
+                                    <img class="list__img" src="./images/img-5-min.jpg"  alt="Ресторан Seafood">
+        
+                                </picture>
+                                <!-- <img class="list__img" src="./images/img(9)-min.jpg" width="370" alt="Коробки">                                 -->
                                 <div class="list__overlay">
                                     <h2 class="list__overlay-title">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -141,7 +204,18 @@
                     <li class="list__item">
                         <a href="" class="list__portfolio-link">
                             <div class="list__container-overlay">
-                                <img class="list__img" src="./images/img(10)-min.jpg" width="370" alt="Ноутбук">
+                                <picture>
+                                    <source srcset="
+                                    ./images/img-6-min.jpg 1x,
+                                    ./images/card-6-2x.jpg 2x
+                                    "
+                                    
+                                    />                                   
+
+                                    <img class="list__img" src="./images/img-6-min.jpg"  alt="Ресторан Seafood">
+        
+                                </picture>
+                                <!-- <img class="list__img" src="./images/img(10)-min.jpg" width="370" alt="Ноутбук"> -->
                                 <div class="list__overlay">
                                     <h2 class="list__overlay-title">Технокряк это современная площадка распространения коронавируса.
                                         Компании используют эту платформу для цифрового
@@ -156,7 +230,18 @@
                     <li class="list__item">
                         <a href="" class="list__portfolio-link">
                             <div class="list__container-overlay">
-                                <img class="list__img" src="./images/img(11)-min.jpg" width="370" alt="Книга">
+                                <picture>
+                                    <source srcset="
+                                    ./images/img-7-min.jpg 1x,
+                                    ./images/card-7-2x.jpg 2x
+                                    "
+                                   
+                                    />                                   
+
+                                    <img class="list__img" src="./images/img-7-min.jpg"  alt="Ресторан Seafood">
+        
+                                </picture>
+                                <!-- <img class="list__img" src="./images/img(11)-min.jpg" width="370" alt="Книга"> -->
                                 <div class="list__overlay">
                                     <h2 class="list__overlay-title">Технокряк это современная площадка распространения коронавируса.
                                         Компании используют эту платформу для цифрового
@@ -171,7 +256,18 @@
                     <li class="list__item">
                         <a href="" class="list__portfolio-link">
                             <div class="list__container-overlay">
-                                <img class="list__img" src="./images/img(12)-min.jpg" width="370" alt="Бирка">
+                                <picture>
+                                    <source srcset="
+                                    ./images/img-8-min.jpg 1x,
+                                    ./images/card-8-2x.jpg 2x
+                                    "
+                                  
+                                    />                                   
+
+                                    <img class="list__img" src="./images/img-8-min.jpg"  alt="Ресторан Seafood">
+        
+                                </picture>
+                                <!-- <img class="list__img" src="./images/img(12)-min.jpg" width="370" alt="Бирка"> -->
                                 <div class="list__overlay">
                                     <h2 class="list__overlay-title">Технокряк это современная площадка распространения коронавируса.
                                         Компании используют эту платформу для цифрового
@@ -187,7 +283,18 @@
                     <li class="list__item">
                         <a href="" class="list__portfolio-link">
                             <div class="list__container-overlay">
-                                <img class="list__img" src="./images/img(13)-min.jpg" width="370" alt="Ноутбук">
+                                <picture>
+                                    <source srcset="
+                                    ./images/img-9-min.jpg 1x,
+                                    ./images/card-9-2x.jpg 2x
+                                    "
+                                   
+                                    />                                   
+
+                                    <img class="list__img" src="./images/img-9-min.jpg"  alt="Ресторан Seafood">
+        
+                                </picture>
+                                <!-- <img class="list__img" src="./images/img(13)-min.jpg" width="370" alt="Ноутбук"> -->
                                 <div class="list__overlay">
                                     <h2 class="list__overlay-title">Технокряк это современная площадка распространения коронавируса.
                                         Компании используют эту платформу для цифрового
@@ -279,6 +386,38 @@
     </div>
 
 </footer>
+    <!-- -----------------------------hero-mobile-menu------------------------- -->
+    <div class="hero-mobile-menu is-hidden">
+        <button class="mobile-close" type="button">&#10006</button>
+        <div class="container-top">            
+            <nav class="header-mobile-nav">    
+                <ul class="header-mobile-list">
+                    <li><a href="./index.html" class="header-mobile-list__link ">Студия</a></li>
+                    <li><a href="./portfolio.html" class="header-mobile-list__link active">Портфолио</a></li>
+                    <li><a href="Контакты" class="header-mobile-list__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container-buttom">
+            <ul class="header-mobile-contacts">
+                <li>
+                    <a href="tel:+380991111111" class="header-mobile-contacts__tell">
+                        +38 099 111 11 11</a>
+                </li>
+                <li>
+                    <a href="mailto:info@example.com" class="header-mobile-contacts__mail">
+                        info@example.com</a>
+                </li>
     
+            </ul>
+            <ul class="mobile-social">
+                <li class="mobile-social__item"><a class="mobile-social__link" href="">Instagram</a> </li>
+                <li class="mobile-social__item"><a class="mobile-social__link" href="">Twitter</a> </li>
+                <li class="mobile-social__item"><a class="mobile-social__link" href="">Facebook</a> </li>
+                <li class="mobile-social__item"><a class="mobile-social__link" href="">LinkedIn</a> </li>
+            </ul>
+        </div>
+    </div>
+<script src="./js/mobilemenu.js"></script> 
 </body>
 </html>

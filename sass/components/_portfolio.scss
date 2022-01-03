@@ -1,0 +1,185 @@
+.btn-list {
+    display: flex;
+    flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+      margin: 0 auto;
+      justify-content: center;
+    }
+  }
+  
+  .btn-list__portfolio-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: $color-portfolio-button;
+    color: var(--title-text-color);
+    border: $color-portfolio-button;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 6px 22px;
+  
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0;
+  }
+  .btn-list__li {
+    margin-right: 8px;
+    margin-top: 15px;
+  }
+  
+  .btn-list :last-child {
+    margin-right: 0;
+  }
+  .btn-list__portfolio-button:hover,
+  .btn-list__portfolio-button:hover {
+    color: $primary-white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+  
+  .list__portfolio-link {
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .list__portfolio-link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  .container-button {
+    // padding-top: 94px;
+    // padding-bottom: 50px;
+    margin: 0 auto;
+    // padding: 15px;
+    padding: 66px 15px 40px 15px;
+    @media screen and (min-width: 480px) {
+      width: 480px;
+    }
+    @media screen and (min-width: 768px) {
+      width: 768px;
+    }
+  }
+  .title-list {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    opacity: 0;
+    margin-left: -1;
+  }
+  
+  /* -------------------------------------- */
+  
+  .portfolio-container {
+    margin: 0 auto;
+    padding: 15px;
+    @media screen and (min-width: 480px) {
+      width: 480px;
+     }
+     @media screen and (min-width: 768px) {
+      width: 768px;
+     }
+     @media screen and (min-width: 1200px) {
+      width: 1200px;
+     }
+  }
+  .card-section.section {
+    padding-top: 0;
+  }
+  
+  .list {
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-evenly;
+    margin: 0 auto;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+     }
+     @media screen and (min-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+     }
+    
+    
+  }
+  .list .list__item {
+    // width: calc((100% - 60px) / 3);
+    background: #ffffff;
+    border: 1px solid #eeeeee;
+    margin-bottom: 30px;
+    // max-width: 370px;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+     }
+     @media screen and (min-width: 1200px) {
+      width: calc((100% - 60px) / 3);
+     }
+  }
+  .list__container-overlay {
+    position: relative;
+    overflow: hidden;
+  }
+  .list__overlay {
+    background: $overlay-bg;
+  
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: translatey(102%);
+    transition: transform 250ms ease;
+  }
+  .list__portfolio-link {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .list__portfolio-link:focus .list__overlay,
+  .list__portfolio-link:hover .list__overlay {
+    transform: translatey(0);
+  }
+  
+  .list__overlay-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    margin: auto 24px;
+  }
+  
+  .list__img {
+    border-style: none;
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  .list__portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $title-text-color;
+    margin-top: 20px;
+    margin-left: 24px;
+  }
+  .list__portfolio-title-text {
+    font-size: 16px;
+     line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    margin-top: 4px;
+    margin-left: 24px;
+  }

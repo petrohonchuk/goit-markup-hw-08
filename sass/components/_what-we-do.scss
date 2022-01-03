@@ -1,5 +1,13 @@
+.section--hiden{
+  display: none;
+  @media screen and (min-width: 1200px){
+    display: block;
+    padding-top: 0;
+  }
+}
 .container.what-we-do-container {
   padding: 0 15px;
+  
 }
 .what-we-do {
   display: flex;
@@ -35,3 +43,4 @@
   text-align: center;
   color: $title-text-color;
 }
+

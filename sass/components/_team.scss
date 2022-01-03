@@ -1,20 +1,55 @@
+.container.container--add-width{
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding: 0;
+    
+  }
+}
 .teem-section-color {
   background-color: $team-section-color;
 }
 
 .team {
-  display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+    
 }
 .team__li {
-  margin-right: 30px;
   background-color: #fff;
   text-align: center;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-top: 50px;
+  max-width: 450px;
+  margin: 0 auto;
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+    margin-top: 50px;
+  }
+}
+.team__li img{
+  width: 100%;
+  max-width: 450px;
 }
 .team__list li:last-child {
   margin-right: 0px;
